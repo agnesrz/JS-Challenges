@@ -1,0 +1,42 @@
+                                -toRoman Method-
+
+-Create paramater (num)
+-Create an object to store all possible romanEquivs.
+  1:    I
+  5:    V
+  10:   X
+  50:   L
+  100:  C
+  500:  D
+  1000: M
+-Create an array to store all numbers that perfectly equate to a roman numberal, in descending order
+  (allNums = [1,000, 500, 100, 50, 10, 5, 1]);
+-Create a variable to store the final roman numeral (romanNum).
+-Enter a for loop.
+  -Set start idx to 0
+  -Set end idx to allNums.length;
+-Create a while loop
+  -While the number is greater than 0:
+    -if a number has more than one digit: 
+    
+    
+    
+    
+    -num = num - all[idx]
+    -add equivalent roman numberal to 'romanNum';
+-Return 'romanNum';
+
+result: 
+currentNum: 
+
+90=XC
+400 = CD
+2173 => MMCLXXIII
+
+
+7=VII
+1000=M
+900=CM
+90=XC
+2000=MM
+8=VIII

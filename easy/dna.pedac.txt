@@ -1,0 +1,12 @@
+-Create variable to store mutations (pointMutations) and set equal to 0;
+-Create loop
+  -Set starting index to 0
+  -Set ending index to the length of the shorter DNA strand
+    -Check if the length of the DNA strands is the same
+      -If yes, sent end index to length of first strand
+      -If no:
+        -Determine which strand is shorter
+        -Set end index to length of shorter strand
+-Upon each iteration, compare the characters at index i of each DNA strand.
+  -If the characters are different, add 1 to pointMutations
+-Return pointMutations
