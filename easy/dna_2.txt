@@ -1,0 +1,18 @@
+-Create an DNA class
+  -Should have a strand property
+  -Should have a hammingDistance method that takes a strand as a property
+
+
+Hamming Distance Method:
+-Create a variable 'hammingDistance'
+-Create a variable for the stopping index;
+
+-Create a variable for strand1 (this.strand)
+-Create a variable for strand2 (the comparison strand)
+-Check if the strands are the same length. If they are, set stopping index to length of strand 1. 
+ If not, set to length of shorter strand
+
+-Loop through one of the arrays. During each iteration:
+  -compare the value in the current array with the value in the other array, at the same index point
+  -if the values are different, add one to the hammingDistance variable
+-Return 'hammingDistance'

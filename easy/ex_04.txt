@@ -1,0 +1,23 @@
+input: word, list of possible anagrams (string, array)
+output: list of actual anagrams, as selected from input list (array)
+rules:
+  -word length has to match
+  -every letter has to be used once
+  -remove duplicates
+  -matches are not case sensitive (but don't change case)
+
+---Match Method---
+-Create an array to store the result (actual)
+-Iterate through the potential anagrams array. Upon each iteration:
+  -Check if the length of the original word is the same as the length of the current word
+    -If no, skip to next iteration;
+  -Check whether every character in the original word exists in the current word (use charactersMatch method)
+    -If true, add word to actual
+-return actual
+    
+---allCharactersMatch Method---
+-pass in the current word as an argument in array form (charsArr)
+-return the result of iterating over the chracters in the current word (using the every method). Upon each iteration:
+  -Create a variable to store the index of the matching character (charIdx)
+  -If the index is -1, return false
+  -Otherwise, use charIdx to remove the character from the list and return true

@@ -1,0 +1,14 @@
+Create a triangle class.
+Create a method that determines the classification of the triangle
+-Sort the lengths by size;
+-Check that triangle is valid. 
+  To do this, check that:
+    -Has three sides
+    -All sides greater than 0
+    -side1 + side2 > side3
+  -If yes to any of the above, return 'Invalid triangle'
+-Check if all sides are the same
+  -If yes, return equilateral
+-Check if two sides are the same
+  -If yes, return isosceles
+-Return scalene
