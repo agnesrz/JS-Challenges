@@ -1,0 +1,20 @@
+Input: Octal number
+Output: Decimal version of octal number
+
+Rules:
+-To get octal number from decimal number:
+  -The rightmost digit gets multiplied by Math.pow(8, n), where 'n' indicates the index of the number when number is reversed
+  -Octal 10 = (0 * Math.pow(8, 0)) + (1 * Math.pow(8, 1) = Decimal 8
+-Treat invalid input as octal 0
+-Invalid input includes:
+  -Digits 8 and 9
+  -Any non-numeric characters
+
+Algorithm toDecimal:
+-Split digits of octal number into an array, and reverse the array (octalDigitsReversed);
+-Iterate over octalDigitsReversed
+  -use reduce
+  -upon each iteration
+    -use the current index to calculate the decimal equivalent of the number
+    -add the decimal equivalent of the number to total
+    -return the total
