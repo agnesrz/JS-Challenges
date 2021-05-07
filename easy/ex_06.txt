@@ -1,0 +1,21 @@
+Rules:
+-Aliquot sum: the sum of the numbers that can be evenly divided into a target number 
+  (for ex, 1 + 3 + 5 is the Aliquot sum of 15)
+-Three kinds of numbers:
+  -Perfect: Aliquot sum is equal to the number
+  -Abundant: Aliquot sum > number
+  -Deficient: Aliquot sum < number; prime numbers are always deficient
+
+Algorithm:
+
+CLASSIFY
+-Take a number as an argument (target)
+-Create an array to store evenly divisible numbers (divisible); initalize with value 1;
+-Iterate up to num;
+  -Determine whether the number is even or odd; if it is odd, start iterating from 3; otherwise, start iterating from 2
+  -Increment by 2
+  -Upon each iteration:
+    -check if target can be evenly divided by the number
+      -if yes, push to divisible
+-Add up the values in divisible
+-Classify the number

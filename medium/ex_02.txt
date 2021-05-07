@@ -1,0 +1,35 @@
+Rules:
+-Randomly generate a robot name
+  -Should contain 5 characters
+  -First two characters should be uppercase letters
+  -Last three characters should be numbers
+-Do not allow the robot's name to be used twice
+
+Questions:
+-What is meant by 'if it can be avoided?' Under what circumstances is it unavoidable?
+
+NAME ROBOT
+-Use a IIFE to return a new function that has access to an empty names array. The returned function should:
+  -Initialize a 'name' variable with an empty string
+  -enter a while loop 
+    -reassign 'name' to calling generateName()
+    -If 'names' does not include 'name':
+      -Add 'name' to 'names'
+      -break
+    -Else
+      -set 'name' to empty string
+  -Return name
+
+GENERATE NAME
+-Create a name variable and set equal to empty string;
+-Create an array to store alphabetic characters (characters)
+-Create an array to store all numbers (numbers)
+-Enter a loop that iterates two times. Upon each iteration:
+  -get a random letter
+  -push it to the name variable
+-"" iterates three times
+  -"
+  -"
+-return 'name'
+
+  

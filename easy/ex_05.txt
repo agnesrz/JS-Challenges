@@ -1,0 +1,19 @@
+-Note invalid values can be passed to class without raising an error
+-Note case insensitivity
+
+-Create a nested array (letterValues) on the Scrabble object to keep track of the score of each letter. 
+Each sub-array will hold 2 elements: the score and a string with all the characters that result in that score
+
+CORE METHOD
+-Create a variable for the total score (total) and set equal to 0
+-Check if the input is a string. If it is not, return total
+-Iterate over the characters of the word. Upon each iteration:
+  -capitalize the character
+  -get the score of the character (method)
+  -add the score to total
+-Return the total score
+
+CHAR SCORE METHOD
+-accept character as argument
+-filter the letterValues array to find the relevant point value
+-return the point value

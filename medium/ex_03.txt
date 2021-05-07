@@ -1,0 +1,24 @@
+RULES
+-Clock uses military time
+-Time added to add and subtract methods will be in minutes
+
+ALGORITHM
+
+At method:
+  Returns:
+    -new Clock object with two properties:
+      -hours: an array that stores all the possible hours of the day (allHours), rotated to reflect current time
+      -minutes an array to store all the possible minutes of the day (allMinutes), rotated to reflect current time
+
+  Helper methods
+    -BuildNumArr
+      -Takes a stop value as an argument
+      -Returns an array that counts up to the stop value
+    -Rotate
+    
+Add and subtract methods:
+  -Rotates the array forward(add) or backward (subtract) using a loop
+  
+toString method:
+      
+

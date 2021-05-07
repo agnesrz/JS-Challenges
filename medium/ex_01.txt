@@ -1,0 +1,34 @@
+Input: a letter (string)
+Output: a diamond (string)
+
+Rules:
+  -Spacing between characters:
+    -Row 1: 0 spaces between letters
+    -Row 2: 1 space between letters
+    -Row 3+: add 2 spaces between letters
+  -Spacing before and after characters:
+    -Widest row will have no spaces on either side
+    -All other rows: determine distance from last letter. Spaces on either side = distance from last letter.
+
+DIAMOND CLASS
+-Create a variable that stores a string of all possible letters 
+in alphabetic order (allLetters)
+  
+MAKE DIAMOND [Accept letter as arg]
+-Create a variable to store all letters that will be used in 
+constructing the diamond (letters):
+  -Find the index of the letter in allLetters (make sure to look in uppercase)
+  -Use the index to copy part of the string (from start to the specific letter)
+-Create an empty array to store diamond template (template)
+-Iterate through letters. Upon each iteration:
+  -Determine how many spaces will need to be between the letters 
+  -Determine how many spaces will need to be before and after the letters
+  -Create the structured string
+  -Push it to the template array
+-Complete the second part of the template
+  -Create a copy of the template array (copy)
+  -Remove the first element from copy
+  -Reverse the elements
+  -Append to template
+-Join the elements in template with line breaks
+-Print the template
